@@ -1,0 +1,57 @@
+.slid_box1，.slid_box2，.slid_box3，.slid_box4，.slid_box5，.slid_box6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.s_button {
+    margin-top: 24px;
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(67deg,#00416a6f,#e4e5e679);
+    background-size: 400%;
+    /* 其他样式 */
+    position: relative;
+    left: -300px;
+    transition: all 0.5s ease;
+}
+
+.s_button:hover{
+    background-position: right;
+    box-shadow: 2px 2px 7px 2px #888888;
+
+}
+.slid_span1 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.s_button .slid_p1 {
+    margin: 0;
+    padding: 0;
+    color: #313131;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.s_button img {
+    padding-left: 5px;
+    height: auto;
+    width: 14%;
+}

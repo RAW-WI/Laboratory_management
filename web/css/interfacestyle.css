@@ -1,0 +1,456 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg,#e6dada,rgb(86, 142, 156));
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #000000;
+    padding-top: 40px;
+    /* 设置顶部内边距，确保内容不被导航栏遮挡 */
+}
+html{
+    overflow: hidden;
+
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e9e9e9;
+    /* 其他样式 */
+}
+.div3{
+    overflow: hidden;
+
+}
+.div1 {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.div2 {
+    overflow: hidden;
+    display: flex;
+    float: left;
+    background-image:linear-gradient(120deg,#cbb6b6,rgb(190, 218, 227));
+    height: 5%;
+    padding: 0px;
+}
+
+.div2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.div2 li {
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 a {
+    text-decoration-line: none;
+    text-decoration-color: transparent;
+    color: black;
+}
+
+.div3 {
+    border-radius: 15px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 20px;
+    width: 90px;
+    height: 91.3%;
+    flex-direction: column;
+    /* 让子元素垂直排列 */
+}
+
+.in_button_dex {
+    margin: 7px auto;
+    text-align: center;
+    width: 65px;
+    height: 70px;
+    background-color: #ffffff;
+}
+.in_button_dex:last-child {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+.in_button_dex:last-child svg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.in_button_dex .d_svg{
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.in_button {
+    margin: 5px auto;
+    text-align: center;
+    width: 65px;
+    height: 70px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    transition: border-radius 0.3s, box-shadow 0.3s, background-color 0.3s, height 0.5s;
+}
+
+.in_button:hover {
+    border-radius: 10px;
+    background-color:#f0e6e6;
+    height: 140px;
+    box-shadow: 2px 2px 7px 2px #888888;
+    cursor: pointer;
+}
+
+.in_button img {
+    padding-left: 0%;
+    padding-top: 15%;
+    width: 34px;
+}
+
+.in_button:hover img {
+    padding-left: 0%;
+    padding-top: 15%;
+    width: 34px;
+}
+
+.in_button .out_p {
+    font-weight: 800;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+}
+
+.in_button .in_p {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    /* 设置行高为1.5倍文字大小 */
+}
+
+.main_l {
+    overflow: hidden; /* 隐藏超出范围的内容 */
+    border-radius: 14px;
+    margin: 20px 10px 0px 20px;
+    padding: 20px;
+    width: 15%;
+    height: 87%;
+    background-color: rgba(255, 255, 255, 0.306);
+}
+
+.main {
+    max-height: 87%; /* 设置父级div的最大高度 */
+    border-radius: 14px;
+    overflow: hidden; /* 隐藏超出部分 */
+    padding: 20px;
+    margin: 20px 10px 0px 10px;
+    width: 51%;
+    height: 87%;
+    overflow-y: auto; /* 当内容溢出时出现滚动条 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: rgba(255, 255, 255, 0.306);
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+.main_r {
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px 20px 0px 10px;
+    width: 27%;
+    height: 87%;
+    overflow: hidden; /* 隐藏超出部分 */
+    overflow-y: auto; /* 当内容溢出时出现滚动条 */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: rgba(255, 255, 255, 0.306);
+}
+.main_r::-webkit-scrollbar {
+    display: none;
+}
+.output{
+    background-color: #ffd0d0;
+    width: 100%;
+    height: 70%;
+}
+
+
+
+/* 包含显示标签的框和单个显示标签属性 */
+/* ~~~~~~~~~~~~~~~~~~~~ */
+.display_data_css{
+    align-items: flex-start;
+    margin-top: 10px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+    overflow-y: auto; /* 当内容溢出时出现滚动条 */
+    max-height: 83.6%; /* 子div的最大高度不超过父div */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 14px;
+}
+.display_data_css::-webkit-scrollbar {
+    display: none;
+}
+.display_data_in_css{
+    /* display: grid;
+    grid-template-rows: ;    */
+    margin: 1.75% ;
+    padding: 0.25%;
+    width: 20.35%;
+    height:167px;
+    background: linear-gradient(297deg,#ff6e7f,#bfe9ff);
+    background-size: 400%;
+    border-radius: 14px;
+    box-shadow: 2px 2px 7px 2px #888888;
+    padding:4px;
+    transition: background-position 0.3s ease;
+}
+.display_data_in_css2{
+    /* display: grid;
+    grid-template-rows: ;    */
+    margin: 1.75% ;
+    padding: 0.25%;
+    width: 20.35%;
+    height:85px;
+    background: linear-gradient(297deg,#d9a7c7,#fffcdc);
+    background-size: 400%;
+    border-radius: 14px;
+    box-shadow: 2px 2px 7px 2px #888888;
+    padding:4px;
+    transition: background-position 0.3s ease;
+}
+.display_data_in_css3{
+    /* display: grid;
+    grid-template-rows: ;    */
+    margin: 1.75% ;
+    padding: 0.25%;
+    width: 20.35%;
+    height:110px;
+    background: linear-gradient(297deg,#9796f0,#fbc7d4);
+    background-size: 400%;
+    border-radius: 14px;
+    box-shadow: 2px 2px 7px 2px #888888;
+    padding:4px;
+    transition: background-position 0.3s ease;
+}
+.display_data_in_css:hover{
+    background-position: right;
+    cursor: pointer;
+}
+.display_data_in_css2:hover{
+    background-position: right;
+    cursor: pointer;
+}
+.display_data_in_css3:hover{
+    background-position: right;
+    cursor: pointer;
+}
+
+.display_data_in_css_sp1{
+    background-color: #ffffff;
+    padding-left: 2px;
+    padding-right: 3px;
+    margin-left: 5px;
+    color: #606060;
+    font-size: 13px;
+    font-weight: 1100;
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+.display_data_in_css_sp2{
+    margin-left: 9px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~ */
+/* 12-9添加 */
+.div2_ico1 {
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.div2_p1 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 120%;
+    margin: 10px;
+}
+
+.div2_ico2 {
+    margin-top:8px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.div2_d1 {
+    height: 100%;
+    display: flex;
+    margin-left:75%;
+}
+.In_show_p1{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*  */
+
+/* 12-9-2添加 */
+.main_r_p1{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 900;
+}
+.main_r_p2{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+/* 12-9-2添加 */
+
+/* 12-10添加 */
+.main_side_div{
+
+    margin-bottom: 15px;
+    opacity: 0;
+    display: flex;
+    transition: all 0.5s;
+    flex-direction: row;
+    padding: 1.2%;
+    border-radius: 13px;
+    width: 97.6%;
+    background-color: #ffffff37;
+}
+.main_in_show_l{
+    width: 60%;
+    height: 100%;
+}
+.main_in_show_l_2{
+    width: 80%;
+    height: 100%;
+}
+.main_in_show_t{
+    width: 100%;
+    height: 100%;
+
+}
+.main_in_show_r{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+}
+.main_in_show_r_2{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
+}
+.main_in_show_r_in_1{
+    background-image:linear-gradient(67deg,#00416a6f,#e4e5e679);
+    background-size: 400%;
+    transition: all 0.5s ease;
+    line-height: 250%;
+    box-shadow: 2px 2px 5px 2px #888888;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c5d4e1;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}.main_in_show_r_in_1_2{
+    background-image:linear-gradient(67deg,#00416a6f,#e4e5e679);
+    background-size: 400%;
+    transition: all 0.5s ease;
+    line-height: 250%;
+    box-shadow: 2px 2px 5px 2px #888888;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    background-color: #c5d4e1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.main_in_show_r_in_2{
+    background-image:linear-gradient(67deg,#00416a6f,#e4e5e679);
+    background-size: 400%;
+    transition: all 0.5s ease;
+    line-height: 250%;
+    box-shadow: 2px 2px 5px 2px #888888;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c5d4e1;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}.main_in_show_r_in_3{
+    background-image:linear-gradient(67deg,#00416a6f,#e4e5e679);
+    background-size: 400%;
+    transition: all 0.5s ease;
+    line-height: 250%;
+    box-shadow: 2px 2px 5px 2px #888888;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #c5d4e1;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+.main_in_show_r_in_1:hover  {
+    background-position: right;
+    color: #585858;
+}.main_in_show_r_in_2:hover  {
+    background-position: right;
+    color: #585858;
+}.main_in_show_r_in_3:hover  {
+    background-position: right;
+    color: #585858;
+}
+.label_1{
+    width: 100px !important;
+}
+
+/* 12-10添加 */

@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.error-message {
+    height: 60px;
+    width: auto;
+    display: block;
+    background-color: #ffc5c5;
+    color: #96302e;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.Tspan {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 29px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Tspan3 a {
+    font-size: 12px;
+    margin-left: 200px;
+    font-size: medium;
+    color: #3498db;
+}
+
+.Tspan3 {
+    display: block;
+    color: #d1d1d1;
+    margin-top: 16px;
+}
+
+.Tspan4 {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #873232;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #e6dada, rgb(86, 142, 156));
+    margin: 0;
+    padding: 14px;
+    line-height: 1.5em;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.login-left {
+    overflow: hidden;
+    /* 如果需要，隐藏超出容器范围的部分 */
+    width: 860px;
+    background: #f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-left_in {
+    overflow: hidden;
+    /* 如果需要，隐藏超出容器范围的部分 */
+}
+
+.login-left_in img {
+    border-radius: 15px;
+    padding: 0;
+    max-width: 100%;
+    /* 让图片自动适应父元素的宽度 */
+    height: auto;
+    /* 保持图片的纵横比 */
+    display: block;
+    /* 防止底部留白 */
+}
+
+.login-form {
+    width: 360px;
+    background: #f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb {
+    font-size: 15px;
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 50px 0;
+}
+
+.txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+h1 {
+    font-size: 34px;
+    text-shadow: 3px 3px 3px #707070;
+}
+
+.txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .8s;
+}
+
+.txtb span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    transition: .8s;
+}
+
+.focus + span::before {
+    top: -5px;
+}
+
+.focus + span::after {
+    width: 100%;
+}
+
+.logbtn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #e6dada, rgb(64, 137, 156));
+    background-size: 400%;
+    color: #ffffff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-weight: 900;
+    border-radius: 10px;
+    /* 设置圆角 */
+    letter-spacing: 10px;
+    transition: background-position 0.7s ease;
+    /* 添加过渡效果 */
+}
+
+.logbtn:hover {
+    background-position: right;
+}
+
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.b_submit {
+    margin-top: 140px;
+}
+
+/* 首次加载进入动画 */
+@keyframes customAnimation {
+    0% {
+        opacity: 0.3;
+        transform: translate(-25%, -50%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.element {
+    animation: customAnimation 1.6s cubic-bezier(0.15, 0.5, 0.35, 1);
+}
+
+
+/* 首次加载进入动画 */
+@keyframes customAnimation2 {
+    0% {
+        opacity: 0.3;
+        transform: translate(-75%, -50%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.element2 {
+    animation: customAnimation2 1.2s cubic-bezier(0.15, 0.5, 0.35, 1);
+}

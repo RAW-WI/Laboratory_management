@@ -1,0 +1,115 @@
+
+
+.bttt_stu_delete{
+    display: flex;
+    height: 55px;
+    width: 50%;
+}
+.signupFrm_stu_delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form_stu_delete {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    padding:0px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title_stu_delete {
+    height: auto;
+    text-align: left;
+    font-size: 40px;
+    margin: 20px 5px 5px 5px;
+}
+
+.inputContainer_stu_delete {
+    position: relative;
+    height: 55px;
+    width: 98.9%;
+    margin: 17px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input_stu_delete {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 40%;
+    border: 1px solid #050000;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.label_stu_delete {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.submitBtn_stu_delete {
+    margin-left: 10px;
+    margin-right: 5px;
+    display: block;
+    width: 80%;
+    height: 55px;
+    border: none;
+    background: linear-gradient(120deg,#e6dada,rgb(64, 137, 156));
+    background-size: 400%;
+    color: #ffffff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-weight: 900;
+    border-radius: 10px;
+    /* 设置圆角 */
+    letter-spacing: 10px;
+    transition: background-position 0.7s ease;
+    /* 添加过渡效果 */
+}
+
+.submitBtn_stu_delete:hover {
+    background-position: right;
+}
+
+.input_stu_delete:focus + .label_stu_delete {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #426d7f;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.input_stu_delete:not(:placeholder-shown)+ .label_stu_delete {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.input_stu_delete:focus {
+    border: 2px solid #426d7f;
+}

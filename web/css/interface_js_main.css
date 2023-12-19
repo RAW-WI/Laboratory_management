@@ -1,0 +1,11 @@
+*{
+    /*text-align: center;*/
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.del_show_div{
+    width: 90%;
+    height: 50%;
+    overflow: auto;
+    background-color: #96302e;
+}
